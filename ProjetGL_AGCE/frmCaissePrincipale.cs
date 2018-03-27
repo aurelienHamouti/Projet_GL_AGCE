@@ -28,5 +28,10 @@ namespace ProjetGL_AGCE
             frLogin.ShowDialog();
             //Application.Run(new frLogin());
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

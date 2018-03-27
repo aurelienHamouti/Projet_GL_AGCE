@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetGL_AGCE
 {
-    public partial class Form2 : Form
+    public partial class frmCarteBoissons : Form
     {
-        public Form2()
+        public frmCarteBoissons()
         {
             InitializeComponent();
         }

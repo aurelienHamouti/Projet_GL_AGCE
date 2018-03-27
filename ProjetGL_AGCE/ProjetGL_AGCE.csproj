@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="frLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +57,24 @@
     </Compile>
     <Compile Include="frmCaissePrincipale.Designer.cs">
       <DependentUpon>frmCaissePrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarteBoissons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarteBoissons.Designer.cs">
+      <DependentUpon>frmCarteBoissons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEncaissement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEncaissement.Designer.cs">
+      <DependentUpon>frmEncaissement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpression.Designer.cs">
+      <DependentUpon>frmImpression.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
