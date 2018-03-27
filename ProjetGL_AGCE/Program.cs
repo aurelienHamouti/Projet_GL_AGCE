@@ -16,7 +16,7 @@ namespace ProjetGL_AGCE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frCaissePrincipale());
+            Application.Run(new frmCaissePrincipale());
         }
     }
 }
