@@ -26,10 +26,45 @@ namespace ProjetGL_AGCE
         {
             frLogin frLogin = new frLogin();
             frLogin.ShowDialog();
-            //Application.Run(new frLogin());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImprimerQuittance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPrixPrincipale_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnArticle1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEncaissement_Click(object sender, EventArgs e)
+        {
+            frmCaisseMonnaies frmCaisseMonnaies = new frmCaisseMonnaies();
+            frmCaisseMonnaies.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListeDesVentes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblParametres_Click(object sender, EventArgs e)
         {
 
         }

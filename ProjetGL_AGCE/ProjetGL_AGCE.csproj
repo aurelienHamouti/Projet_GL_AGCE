@@ -52,6 +52,12 @@
     <Compile Include="frLogin.Designer.cs">
       <DependentUpon>frLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCaisseMonnaies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaisseMonnaies.Designer.cs">
+      <DependentUpon>frmCaisseMonnaies.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCaissePrincipale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,19 +76,40 @@
     <Compile Include="frmEncaissement.Designer.cs">
       <DependentUpon>frmEncaissement.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGestionProduits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionProduits.Designer.cs">
+      <DependentUpon>frmGestionProduits.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmImpression.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmImpression.Designer.cs">
       <DependentUpon>frmImpression.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmParametres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametres.Designer.cs">
+      <DependentUpon>frmParametres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frLogin.resx">
       <DependentUpon>frLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCaisseMonnaies.resx">
+      <DependentUpon>frmCaisseMonnaies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCaissePrincipale.resx">
       <DependentUpon>frmCaissePrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionProduits.resx">
+      <DependentUpon>frmGestionProduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametres.resx">
+      <DependentUpon>frmParametres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
