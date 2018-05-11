@@ -46,11 +46,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frLogin.cs">
+    <Compile Include="Parametres\GestionUtilisateurs\frmAjouterUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frLogin.Designer.cs">
-      <DependentUpon>frLogin.cs</DependentUpon>
+    <Compile Include="Parametres\GestionUtilisateurs\frmAjouterUtilisateur.Designer.cs">
+      <DependentUpon>frmAjouterUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionUtilisateurs\frmModifierDroitsUtilisateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionUtilisateurs\frmModifierDroitsUtilisateurs.Designer.cs">
+      <DependentUpon>frmModifierDroitsUtilisateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionUtilisateurs\frmModifierUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionUtilisateurs\frmModifierUtilisateur.Designer.cs">
+      <DependentUpon>frmModifierUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionUtilisateurs\frmSupprimerUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionUtilisateurs\frmSupprimerUtilisateur.Designer.cs">
+      <DependentUpon>frmSupprimerUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionStocks\frmAjouterStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionStocks\frmAjouterStock.Designer.cs">
+      <DependentUpon>frmAjouterStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionStocks\frmSupprimerStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionStocks\frmSupprimerStock.Designer.cs">
+      <DependentUpon>frmSupprimerStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmModifierProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmModifierProduit.Designer.cs">
+      <DependentUpon>frmModifierProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmSupprimerProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmSupprimerProduit.Designer.cs">
+      <DependentUpon>frmSupprimerProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmAjouterProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmAjouterProduit.Designer.cs">
+      <DependentUpon>frmAjouterProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmAffichageHistoriqueStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmAffichageHistoriqueStock.Designer.cs">
+      <DependentUpon>frmAffichageHistoriqueStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmAffichageHistoriqueVentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmAffichageHistoriqueVentes.Designer.cs">
+      <DependentUpon>frmAffichageHistoriqueVentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmAffichageHistoriqueUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmAffichageHistoriqueUtilisateur.Designer.cs">
+      <DependentUpon>frmAffichageHistoriqueUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCaisseMonnaies.cs">
       <SubType>Form</SubType>
@@ -64,40 +136,136 @@
     <Compile Include="frmCaissePrincipale.Designer.cs">
       <DependentUpon>frmCaissePrincipale.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCarteBoissons.cs">
+    <Compile Include="Articles\frmCarteBoissons.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCarteBoissons.Designer.cs">
+    <Compile Include="Articles\frmCarteBoissons.Designer.cs">
       <DependentUpon>frmCarteBoissons.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEncaissement.cs">
+    <Compile Include="Articles\frmCarteNettoyage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEncaissement.Designer.cs">
-      <DependentUpon>frmEncaissement.cs</DependentUpon>
+    <Compile Include="Articles\frmCarteNettoyage.Designer.cs">
+      <DependentUpon>frmCarteNettoyage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionProduits.cs">
+    <Compile Include="Articles\frmCarteRepas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionProduits.Designer.cs">
+    <Compile Include="Articles\frmCarteRepas.Designer.cs">
+      <DependentUpon>frmCarteRepas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\frmCarteSandwichs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articles\frmCarteSandwichs.Designer.cs">
+      <DependentUpon>frmCarteSandwichs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\frmCarteSnacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articles\frmCarteSnacks.Designer.cs">
+      <DependentUpon>frmCarteSnacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevise.Designer.cs">
+      <DependentUpon>frmDevise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmGestionHistorique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionHistorique\frmGestionHistorique.Designer.cs">
+      <DependentUpon>frmGestionHistorique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionImpression\frmGestionImpression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionImpression\frmGestionImpression.Designer.cs">
+      <DependentUpon>frmGestionImpression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmGestionProduits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\GestionProduits\frmGestionProduits.Designer.cs">
       <DependentUpon>frmGestionProduits.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmImpression.cs">
+    <Compile Include="Parametres\GestionStocks\frmGestionStocks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmImpression.Designer.cs">
-      <DependentUpon>frmImpression.cs</DependentUpon>
+    <Compile Include="Parametres\GestionStocks\frmGestionStocks.Designer.cs">
+      <DependentUpon>frmGestionStocks.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmParametres.cs">
+    <Compile Include="Parametres\GestionUtilisateurs\frmGestionUtilisateurs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmParametres.Designer.cs">
+    <Compile Include="Parametres\GestionUtilisateurs\frmGestionUtilisateurs.Designer.cs">
+      <DependentUpon>frmGestionUtilisateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListeVentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListeVentes.Designer.cs">
+      <DependentUpon>frmListeVentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\frmParametres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\frmParametres.Designer.cs">
       <DependentUpon>frmParametres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\frmPetiteFourniture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articles\frmPetiteFourniture.Designer.cs">
+      <DependentUpon>frmPetiteFourniture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\frmSoinsCosmetiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articles\frmSoinsCosmetiques.Designer.cs">
+      <DependentUpon>frmSoinsCosmetiques.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frLogin.resx">
-      <DependentUpon>frLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Parametres\GestionUtilisateurs\frmAjouterUtilisateur.resx">
+      <DependentUpon>frmAjouterUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionUtilisateurs\frmModifierDroitsUtilisateurs.resx">
+      <DependentUpon>frmModifierDroitsUtilisateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionUtilisateurs\frmModifierUtilisateur.resx">
+      <DependentUpon>frmModifierUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionUtilisateurs\frmSupprimerUtilisateur.resx">
+      <DependentUpon>frmSupprimerUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionStocks\frmAjouterStock.resx">
+      <DependentUpon>frmAjouterStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionStocks\frmSupprimerStock.resx">
+      <DependentUpon>frmSupprimerStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionProduits\frmModifierProduit.resx">
+      <DependentUpon>frmModifierProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionProduits\frmSupprimerProduit.resx">
+      <DependentUpon>frmSupprimerProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionProduits\frmAjouterProduit.resx">
+      <DependentUpon>frmAjouterProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionHistorique\frmAffichageHistoriqueStock.resx">
+      <DependentUpon>frmAffichageHistoriqueStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionHistorique\frmAffichageHistoriqueVentes.resx">
+      <DependentUpon>frmAffichageHistoriqueVentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionHistorique\frmAffichageHistoriqueUtilisateur.resx">
+      <DependentUpon>frmAffichageHistoriqueUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCaisseMonnaies.resx">
       <DependentUpon>frmCaisseMonnaies.cs</DependentUpon>
@@ -105,11 +273,50 @@
     <EmbeddedResource Include="frmCaissePrincipale.resx">
       <DependentUpon>frmCaissePrincipale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionProduits.resx">
+    <EmbeddedResource Include="Articles\frmCarteBoissons.resx">
+      <DependentUpon>frmCarteBoissons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles\frmCarteNettoyage.resx">
+      <DependentUpon>frmCarteNettoyage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles\frmCarteRepas.resx">
+      <DependentUpon>frmCarteRepas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles\frmCarteSandwichs.resx">
+      <DependentUpon>frmCarteSandwichs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles\frmCarteSnacks.resx">
+      <DependentUpon>frmCarteSnacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevise.resx">
+      <DependentUpon>frmDevise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionHistorique\frmGestionHistorique.resx">
+      <DependentUpon>frmGestionHistorique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionImpression\frmGestionImpression.resx">
+      <DependentUpon>frmGestionImpression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionProduits\frmGestionProduits.resx">
       <DependentUpon>frmGestionProduits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmParametres.resx">
+    <EmbeddedResource Include="Parametres\GestionStocks\frmGestionStocks.resx">
+      <DependentUpon>frmGestionStocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\GestionUtilisateurs\frmGestionUtilisateurs.resx">
+      <DependentUpon>frmGestionUtilisateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListeVentes.resx">
+      <DependentUpon>frmListeVentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\frmParametres.resx">
       <DependentUpon>frmParametres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles\frmPetiteFourniture.resx">
+      <DependentUpon>frmPetiteFourniture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articles\frmSoinsCosmetiques.resx">
+      <DependentUpon>frmSoinsCosmetiques.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

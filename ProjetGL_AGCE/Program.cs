@@ -10,6 +10,9 @@ namespace ProjetGL_AGCE
     {
         /// <summary>
         /// The main entry point for the application.
+        /// Auteur : Aurélien Hamouti
+        /// Date de réalisation : 05:04:2018
+        /// Réaliseé dans le cadre des cours de la HEG Genève
         /// </summary>
         [STAThread]
         static void Main()
