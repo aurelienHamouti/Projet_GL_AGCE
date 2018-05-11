@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dao\DaoArticles.cs" />
+    <Compile Include="dao\DaoUsers.cs" />
     <Compile Include="Parametres\GestionUtilisateurs\frmAjouterUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>
