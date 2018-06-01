@@ -48,14 +48,19 @@
             this.btnListeDesVentes = new System.Windows.Forms.Button();
             this.btnTypeArticlePetiteFourniture = new System.Windows.Forms.Button();
             this.btnQuitterApplication = new System.Windows.Forms.Button();
+            this.lblDescriptionMontantTotal = new System.Windows.Forms.Label();
+            this.lblMontantTotal = new System.Windows.Forms.Label();
+            this.lblDescriptionReste = new System.Windows.Forms.Label();
+            this.lblReste = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConnectionCaissePrincipale
             // 
             this.btnConnectionCaissePrincipale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnectionCaissePrincipale.Location = new System.Drawing.Point(794, 48);
+            this.btnConnectionCaissePrincipale.Location = new System.Drawing.Point(1853, 107);
+            this.btnConnectionCaissePrincipale.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnConnectionCaissePrincipale.Name = "btnConnectionCaissePrincipale";
-            this.btnConnectionCaissePrincipale.Size = new System.Drawing.Size(121, 37);
+            this.btnConnectionCaissePrincipale.Size = new System.Drawing.Size(282, 83);
             this.btnConnectionCaissePrincipale.TabIndex = 0;
             this.btnConnectionCaissePrincipale.Text = "Changer de caissier";
             this.btnConnectionCaissePrincipale.UseVisualStyleBackColor = true;
@@ -65,9 +70,10 @@
             // 
             this.lblAccueilPrincipale.AutoSize = true;
             this.lblAccueilPrincipale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccueilPrincipale.Location = new System.Drawing.Point(17, 23);
+            this.lblAccueilPrincipale.Location = new System.Drawing.Point(40, 51);
+            this.lblAccueilPrincipale.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblAccueilPrincipale.Name = "lblAccueilPrincipale";
-            this.lblAccueilPrincipale.Size = new System.Drawing.Size(438, 20);
+            this.lblAccueilPrincipale.Size = new System.Drawing.Size(923, 40);
             this.lblAccueilPrincipale.TabIndex = 13;
             this.lblAccueilPrincipale.Text = "AGCE - Application de gestion de caisse électronique";
             // 
@@ -75,18 +81,20 @@
             // 
             this.lblCaissierPrincipale.AutoSize = true;
             this.lblCaissierPrincipale.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaissierPrincipale.Location = new System.Drawing.Point(652, 23);
+            this.lblCaissierPrincipale.Location = new System.Drawing.Point(1521, 51);
+            this.lblCaissierPrincipale.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCaissierPrincipale.Name = "lblCaissierPrincipale";
-            this.lblCaissierPrincipale.Size = new System.Drawing.Size(116, 13);
+            this.lblCaissierPrincipale.Size = new System.Drawing.Size(248, 29);
             this.lblCaissierPrincipale.TabIndex = 16;
             this.lblCaissierPrincipale.Text = "Caissier connecté :";
             // 
             // lblCaissierConnecte
             // 
             this.lblCaissierConnecte.AutoSize = true;
-            this.lblCaissierConnecte.Location = new System.Drawing.Point(791, 23);
+            this.lblCaissierConnecte.Location = new System.Drawing.Point(1846, 51);
+            this.lblCaissierConnecte.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCaissierConnecte.Name = "lblCaissierConnecte";
-            this.lblCaissierConnecte.Size = new System.Drawing.Size(124, 13);
+            this.lblCaissierConnecte.Size = new System.Drawing.Size(272, 29);
             this.lblCaissierConnecte.TabIndex = 17;
             this.lblCaissierConnecte.Text = "Aucun caissier connecté";
             // 
@@ -94,18 +102,20 @@
             // 
             this.pnlCaissePrincipale.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pnlCaissePrincipale.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlCaissePrincipale.Location = new System.Drawing.Point(618, 12);
+            this.pnlCaissePrincipale.Location = new System.Drawing.Point(1442, 27);
+            this.pnlCaissePrincipale.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pnlCaissePrincipale.Name = "pnlCaissePrincipale";
-            this.pnlCaissePrincipale.Size = new System.Drawing.Size(10, 554);
+            this.pnlCaissePrincipale.Size = new System.Drawing.Size(23, 1236);
             this.pnlCaissePrincipale.TabIndex = 18;
             // 
             // lblDescriptionPrixPrincipale
             // 
             this.lblDescriptionPrixPrincipale.AutoSize = true;
             this.lblDescriptionPrixPrincipale.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescriptionPrixPrincipale.Location = new System.Drawing.Point(655, 133);
+            this.lblDescriptionPrixPrincipale.Location = new System.Drawing.Point(1528, 297);
+            this.lblDescriptionPrixPrincipale.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblDescriptionPrixPrincipale.Name = "lblDescriptionPrixPrincipale";
-            this.lblDescriptionPrixPrincipale.Size = new System.Drawing.Size(128, 26);
+            this.lblDescriptionPrixPrincipale.Size = new System.Drawing.Size(261, 55);
             this.lblDescriptionPrixPrincipale.TabIndex = 14;
             this.lblDescriptionPrixPrincipale.Text = "Prix total : ";
             // 
@@ -113,18 +123,20 @@
             // 
             this.lblPrixPrincipale.AutoSize = true;
             this.lblPrixPrincipale.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrixPrincipale.Location = new System.Drawing.Point(789, 133);
+            this.lblPrixPrincipale.Location = new System.Drawing.Point(1841, 297);
+            this.lblPrixPrincipale.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblPrixPrincipale.Name = "lblPrixPrincipale";
-            this.lblPrixPrincipale.Size = new System.Drawing.Size(40, 26);
+            this.lblPrixPrincipale.Size = new System.Drawing.Size(83, 55);
             this.lblPrixPrincipale.TabIndex = 15;
             this.lblPrixPrincipale.Text = "0.-";
             // 
             // btnImprimerQuittance
             // 
             this.btnImprimerQuittance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimerQuittance.Location = new System.Drawing.Point(665, 270);
+            this.btnImprimerQuittance.Location = new System.Drawing.Point(2058, 959);
+            this.btnImprimerQuittance.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnImprimerQuittance.Name = "btnImprimerQuittance";
-            this.btnImprimerQuittance.Size = new System.Drawing.Size(250, 50);
+            this.btnImprimerQuittance.Size = new System.Drawing.Size(470, 112);
             this.btnImprimerQuittance.TabIndex = 2;
             this.btnImprimerQuittance.Text = "Imprimer quittance";
             this.btnImprimerQuittance.UseVisualStyleBackColor = true;
@@ -133,9 +145,10 @@
             // btnTypeArticlesBoissons
             // 
             this.btnTypeArticlesBoissons.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticlesBoissons.Location = new System.Drawing.Point(21, 95);
+            this.btnTypeArticlesBoissons.Location = new System.Drawing.Point(49, 212);
+            this.btnTypeArticlesBoissons.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticlesBoissons.Name = "btnTypeArticlesBoissons";
-            this.btnTypeArticlesBoissons.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticlesBoissons.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticlesBoissons.TabIndex = 6;
             this.btnTypeArticlesBoissons.Text = "Boissons";
             this.btnTypeArticlesBoissons.UseVisualStyleBackColor = true;
@@ -144,9 +157,10 @@
             // btnTypeArticlesSnack
             // 
             this.btnTypeArticlesSnack.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticlesSnack.Location = new System.Drawing.Point(171, 95);
+            this.btnTypeArticlesSnack.Location = new System.Drawing.Point(399, 212);
+            this.btnTypeArticlesSnack.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticlesSnack.Name = "btnTypeArticlesSnack";
-            this.btnTypeArticlesSnack.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticlesSnack.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticlesSnack.TabIndex = 7;
             this.btnTypeArticlesSnack.Text = "Snack";
             this.btnTypeArticlesSnack.UseVisualStyleBackColor = true;
@@ -155,9 +169,10 @@
             // btnTypeArticlesRepas
             // 
             this.btnTypeArticlesRepas.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticlesRepas.Location = new System.Drawing.Point(321, 95);
+            this.btnTypeArticlesRepas.Location = new System.Drawing.Point(749, 212);
+            this.btnTypeArticlesRepas.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticlesRepas.Name = "btnTypeArticlesRepas";
-            this.btnTypeArticlesRepas.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticlesRepas.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticlesRepas.TabIndex = 8;
             this.btnTypeArticlesRepas.Text = "Repas";
             this.btnTypeArticlesRepas.UseVisualStyleBackColor = true;
@@ -166,9 +181,10 @@
             // btnTypeArticlesSandwichs
             // 
             this.btnTypeArticlesSandwichs.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticlesSandwichs.Location = new System.Drawing.Point(471, 95);
+            this.btnTypeArticlesSandwichs.Location = new System.Drawing.Point(1099, 212);
+            this.btnTypeArticlesSandwichs.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticlesSandwichs.Name = "btnTypeArticlesSandwichs";
-            this.btnTypeArticlesSandwichs.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticlesSandwichs.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticlesSandwichs.TabIndex = 9;
             this.btnTypeArticlesSandwichs.Text = "Sandwichs";
             this.btnTypeArticlesSandwichs.UseVisualStyleBackColor = true;
@@ -177,9 +193,10 @@
             // btnEncaissement
             // 
             this.btnEncaissement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEncaissement.Location = new System.Drawing.Point(665, 201);
+            this.btnEncaissement.Location = new System.Drawing.Point(1526, 799);
+            this.btnEncaissement.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnEncaissement.Name = "btnEncaissement";
-            this.btnEncaissement.Size = new System.Drawing.Size(250, 50);
+            this.btnEncaissement.Size = new System.Drawing.Size(470, 112);
             this.btnEncaissement.TabIndex = 1;
             this.btnEncaissement.Text = "Encaissement";
             this.btnEncaissement.UseVisualStyleBackColor = true;
@@ -188,10 +205,10 @@
             // btnParametres
             // 
             this.btnParametres.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnParametres.Location = new System.Drawing.Point(665, 408);
-            this.btnParametres.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnParametres.Location = new System.Drawing.Point(1526, 1127);
+            this.btnParametres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnParametres.Name = "btnParametres";
-            this.btnParametres.Size = new System.Drawing.Size(250, 50);
+            this.btnParametres.Size = new System.Drawing.Size(470, 112);
             this.btnParametres.TabIndex = 4;
             this.btnParametres.Text = "Paramètres";
             this.btnParametres.UseVisualStyleBackColor = true;
@@ -200,9 +217,10 @@
             // btnTypeArticleMenagers
             // 
             this.btnTypeArticleMenagers.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticleMenagers.Location = new System.Drawing.Point(21, 254);
+            this.btnTypeArticleMenagers.Location = new System.Drawing.Point(49, 567);
+            this.btnTypeArticleMenagers.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticleMenagers.Name = "btnTypeArticleMenagers";
-            this.btnTypeArticleMenagers.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticleMenagers.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticleMenagers.TabIndex = 10;
             this.btnTypeArticleMenagers.Text = "Produits ménagers ";
             this.btnTypeArticleMenagers.UseVisualStyleBackColor = true;
@@ -211,9 +229,10 @@
             // btnTypeArticlesSoins
             // 
             this.btnTypeArticlesSoins.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticlesSoins.Location = new System.Drawing.Point(172, 254);
+            this.btnTypeArticlesSoins.Location = new System.Drawing.Point(401, 567);
+            this.btnTypeArticlesSoins.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticlesSoins.Name = "btnTypeArticlesSoins";
-            this.btnTypeArticlesSoins.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticlesSoins.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticlesSoins.TabIndex = 11;
             this.btnTypeArticlesSoins.Text = "Soins et cosmétiques";
             this.btnTypeArticlesSoins.UseVisualStyleBackColor = true;
@@ -222,9 +241,10 @@
             // btnListeDesVentes
             // 
             this.btnListeDesVentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListeDesVentes.Location = new System.Drawing.Point(665, 339);
+            this.btnListeDesVentes.Location = new System.Drawing.Point(1526, 959);
+            this.btnListeDesVentes.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnListeDesVentes.Name = "btnListeDesVentes";
-            this.btnListeDesVentes.Size = new System.Drawing.Size(250, 50);
+            this.btnListeDesVentes.Size = new System.Drawing.Size(470, 112);
             this.btnListeDesVentes.TabIndex = 3;
             this.btnListeDesVentes.Text = "Liste des ventes";
             this.btnListeDesVentes.UseVisualStyleBackColor = true;
@@ -233,9 +253,10 @@
             // btnTypeArticlePetiteFourniture
             // 
             this.btnTypeArticlePetiteFourniture.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTypeArticlePetiteFourniture.Location = new System.Drawing.Point(323, 254);
+            this.btnTypeArticlePetiteFourniture.Location = new System.Drawing.Point(754, 567);
+            this.btnTypeArticlePetiteFourniture.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnTypeArticlePetiteFourniture.Name = "btnTypeArticlePetiteFourniture";
-            this.btnTypeArticlePetiteFourniture.Size = new System.Drawing.Size(120, 120);
+            this.btnTypeArticlePetiteFourniture.Size = new System.Drawing.Size(280, 268);
             this.btnTypeArticlePetiteFourniture.TabIndex = 12;
             this.btnTypeArticlePetiteFourniture.Text = "Petite fourniture";
             this.btnTypeArticlePetiteFourniture.UseVisualStyleBackColor = true;
@@ -244,20 +265,64 @@
             // btnQuitterApplication
             // 
             this.btnQuitterApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuitterApplication.Location = new System.Drawing.Point(665, 477);
-            this.btnQuitterApplication.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnQuitterApplication.Location = new System.Drawing.Point(2058, 1127);
+            this.btnQuitterApplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuitterApplication.Name = "btnQuitterApplication";
-            this.btnQuitterApplication.Size = new System.Drawing.Size(250, 50);
+            this.btnQuitterApplication.Size = new System.Drawing.Size(470, 112);
             this.btnQuitterApplication.TabIndex = 5;
             this.btnQuitterApplication.Text = "Quitter application";
             this.btnQuitterApplication.UseVisualStyleBackColor = true;
             this.btnQuitterApplication.Click += new System.EventHandler(this.btnQuitterApplication_Click);
             // 
+            // lblDescriptionMontantTotal
+            // 
+            this.lblDescriptionMontantTotal.AutoSize = true;
+            this.lblDescriptionMontantTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescriptionMontantTotal.Location = new System.Drawing.Point(1528, 377);
+            this.lblDescriptionMontantTotal.Name = "lblDescriptionMontantTotal";
+            this.lblDescriptionMontantTotal.Size = new System.Drawing.Size(233, 55);
+            this.lblDescriptionMontantTotal.TabIndex = 19;
+            this.lblDescriptionMontantTotal.Text = "Montant :";
+            // 
+            // lblMontantTotal
+            // 
+            this.lblMontantTotal.AutoSize = true;
+            this.lblMontantTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMontantTotal.Location = new System.Drawing.Point(1843, 377);
+            this.lblMontantTotal.Name = "lblMontantTotal";
+            this.lblMontantTotal.Size = new System.Drawing.Size(83, 55);
+            this.lblMontantTotal.TabIndex = 20;
+            this.lblMontantTotal.Text = "0.-";
+            // 
+            // lblDescriptionReste
+            // 
+            this.lblDescriptionReste.AutoSize = true;
+            this.lblDescriptionReste.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescriptionReste.Location = new System.Drawing.Point(1528, 462);
+            this.lblDescriptionReste.Name = "lblDescriptionReste";
+            this.lblDescriptionReste.Size = new System.Drawing.Size(235, 55);
+            this.lblDescriptionReste.TabIndex = 21;
+            this.lblDescriptionReste.Text = "À rendre :";
+            // 
+            // lblReste
+            // 
+            this.lblReste.AutoSize = true;
+            this.lblReste.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReste.Location = new System.Drawing.Point(1843, 462);
+            this.lblReste.Name = "lblReste";
+            this.lblReste.Size = new System.Drawing.Size(83, 55);
+            this.lblReste.TabIndex = 22;
+            this.lblReste.Text = "0.-";
+            // 
             // frmCaissePrincipale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 578);
+            this.ClientSize = new System.Drawing.Size(2581, 1289);
+            this.Controls.Add(this.lblReste);
+            this.Controls.Add(this.lblDescriptionReste);
+            this.Controls.Add(this.lblMontantTotal);
+            this.Controls.Add(this.lblDescriptionMontantTotal);
             this.Controls.Add(this.btnQuitterApplication);
             this.Controls.Add(this.btnTypeArticlePetiteFourniture);
             this.Controls.Add(this.btnListeDesVentes);
@@ -277,8 +342,8 @@
             this.Controls.Add(this.lblCaissierPrincipale);
             this.Controls.Add(this.lblAccueilPrincipale);
             this.Controls.Add(this.btnConnectionCaissePrincipale);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "frmCaissePrincipale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Caisse principale";
@@ -309,5 +374,9 @@
         private System.Windows.Forms.Button btnListeDesVentes;
         private System.Windows.Forms.Button btnTypeArticlePetiteFourniture;
         private System.Windows.Forms.Button btnQuitterApplication;
+        private System.Windows.Forms.Label lblDescriptionMontantTotal;
+        private System.Windows.Forms.Label lblMontantTotal;
+        private System.Windows.Forms.Label lblDescriptionReste;
+        private System.Windows.Forms.Label lblReste;
     }
 }

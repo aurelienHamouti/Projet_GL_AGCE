@@ -12,28 +12,54 @@ namespace ProjetGL_AGCE
 {
     public partial class frmCaissePrincipale : Form
     {
+        private double prixTotal;
+        private double MontantTotal;
+
+
         public frmCaissePrincipale()
         {
             InitializeComponent();
+            prixTotal = 0;
         }
 
         private void frmCaissePrincipale_Load(object sender, EventArgs e)
         {
-            /*frLogin frLogin = new frLogin();
-            frLogin.ShowDialog();
+
+            /*
             btnEncaissement.Enabled = false;
             btnImprimerQuittance.Enabled = false;
             btnListeDesVentes.Enabled = false;
-            btnParametres.Enabled = false;*/
+            btnParametres.Enabled = false;
+            */
         }
 
-        public void activationFonctionsBasiques() {
+        public void updateMontantTotal(double MontantTotal) {
+            this.MontantTotal = MontantTotal;
+            lblMontantTotal.Text = MontantTotal.ToString();
+        }
+
+        private void activationFonctionsBasiques() {
+            btnEncaissement.Enabled = true;
+            btnImprimerQuittance.Enabled = true;
+            btnListeDesVentes.Enabled = true;
+            btnParametres.Enabled = false;
+        }
+
+        private void activationFonctionsAvancees()
+        {
             btnEncaissement.Enabled = true;
             btnImprimerQuittance.Enabled = true;
             btnListeDesVentes.Enabled = true;
             btnParametres.Enabled = true;
         }
 
+        public void desactivationFonctions()//a appeler lorsque qu'un caissier se déconnecte
+        {
+            btnEncaissement.Enabled = false;
+            btnImprimerQuittance.Enabled = false;
+            btnListeDesVentes.Enabled = false;
+            btnParametres.Enabled = false;
+        }
 
         private void btnConnectionCaissePrincipale_Click(object sender, EventArgs e)
         {
@@ -50,7 +76,7 @@ namespace ProjetGL_AGCE
 
         private void btnEncaissement_Click(object sender, EventArgs e)
         {
-            frmCaisseMonnaies frmCaisseMonnaies = new frmCaisseMonnaies();
+            frmCaisseMonnaies frmCaisseMonnaies = new frmCaisseMonnaies(this);
             frmCaisseMonnaies.ShowDialog();
         }
 
@@ -75,7 +101,7 @@ namespace ProjetGL_AGCE
         private void btnTypeArticlesBoissons_Click(object sender, EventArgs e)
         {
 
-            frmCarteBoissons frmCarteBoissons = new frmCarteBoissons();
+            frmCarteBoissons frmCarteBoissons = new frmCarteBoissons(this);
             frmCarteBoissons.ShowDialog();
         }
 
@@ -111,7 +137,23 @@ namespace ProjetGL_AGCE
 
         private void btnQuitterApplication_Click(object sender, EventArgs e)
         {
+            //mettre à jour DB
             Application.Exit();
         }
+
+        public void addPrixArticle(double PrixAAjouter) {//ajoute le prix d'un article "sélectionné" au prix total
+            prixTotal = prixTotal + PrixAAjouter;
+            lblPrixPrincipale.Text = prixTotal.ToString();
+        }
+
+        public void setCaissierActif(String nomCaissier, int niveauDroit) {//mets à jour l'affichage du caissier connecté
+            lblCaissierPrincipale.Text = nomCaissier;
+            if (niveauDroit == 1) {//droit de caissier
+                activationFonctionsBasiques();
+            } else if (niveauDroit == 2) {//droit administrateur
+                activationFonctionsAvancees();
+            }
+        }
+
     }
 }

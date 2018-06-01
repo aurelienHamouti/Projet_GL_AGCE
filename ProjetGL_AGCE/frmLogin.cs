@@ -32,6 +32,10 @@ namespace ProjetGL_AGCE
 
         private void btnConnectionLogin_Click(object sender, EventArgs e)
         {
+
+            //try catch !!!!!
+
+
             if (txtPassword.Text == "welcomeAGCE")
             {
                 caissier.Text = txtUsername.Text;

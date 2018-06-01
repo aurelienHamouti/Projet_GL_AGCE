@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\DaoArticles.cs" />
+    <Compile Include="dao\DaoParametres.cs" />
     <Compile Include="dao\DaoUsers.cs" />
+    <Compile Include="domaine\Article.cs" />
+    <Compile Include="metier\GestionnaireCaisse.cs" />
     <Compile Include="Parametres\GestionUtilisateurs\frmAjouterUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>

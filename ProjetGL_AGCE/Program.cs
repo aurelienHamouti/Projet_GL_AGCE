@@ -17,6 +17,7 @@ namespace ProjetGL_AGCE
         [STAThread]
         static void Main()
         {
+            new metier.GestionnaireCaisse();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmCaissePrincipale());

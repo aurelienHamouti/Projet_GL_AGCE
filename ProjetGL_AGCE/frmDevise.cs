@@ -12,29 +12,30 @@ namespace ProjetGL_AGCE
 {
     public partial class frmDevise : Form
     {
-        Label devise;
+        frmCaisseMonnaies frm;
 
-        public frmDevise(Label devise)
+        public frmDevise(frmCaisseMonnaies frmCaisseMonnaies)
         {
             InitializeComponent();
-            this.devise = devise;
+            this.frm = frmCaisseMonnaies;
+            //Amélioration -> va chercher les infos dans la db (num et description devise)
         }
 
         private void btnCHF_Click(object sender, EventArgs e)
         {
-            devise.Text = "CHF";
+            frm.updateDevise("CHF");
             Dispose();
         }
 
         private void btnEUR_Click(object sender, EventArgs e)
         {
-            devise.Text = "EUR";
+            frm.updateDevise("EUR");
             Dispose();
         }
 
         private void btnUSD_Click(object sender, EventArgs e)
         {
-            devise.Text = "USD";
+            frm.updateDevise("USD");
             Dispose();
         }
     }
